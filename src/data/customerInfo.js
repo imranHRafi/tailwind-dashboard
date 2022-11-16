@@ -1,0 +1,108 @@
+const customerInfo = [
+  {
+    id: 1,
+    name: "Robert Fox",
+    image:
+      "https://images.pexels.com/photos/8864285/pexels-photo-8864285.jpeg?cs=srgb&dl=pexels-fikri-hidayatullah-8864285.jpg&fm=jpg&_gl=1*12hy7cg*_ga*NTMwNjY5MzMzLjE2NjQ5MDE4MTQ.*_ga_8JE65Q40S6*MTY2ODYwNTcyMi41LjEuMTY2ODYwNTc2Ny4wLjAuMA..",
+    ins: "INS- 12345",
+    card: "5495 1872 27975 4789",
+    amount: 340,
+    securityCode: 732,
+    expiryDate: "04 / 25",
+    paymentType: "visa",
+    frequency: "Monthly",
+  },
+  {
+    id: 2,
+    name: "Jenny Wilson",
+    image:
+      "https://images.pexels.com/photos/8864285/pexels-photo-8864285.jpeg?cs=srgb&dl=pexels-fikri-hidayatullah-8864285.jpg&fm=jpg&_gl=1*12hy7cg*_ga*NTMwNjY5MzMzLjE2NjQ5MDE4MTQ.*_ga_8JE65Q40S6*MTY2ODYwNTcyMi41LjEuMTY2ODYwNTc2Ny4wLjAuMA..",
+    ins: "INS- 12345",
+    card: "5495 1872 27975 4789",
+    amount: 912,
+    securityCode: 732,
+    expiryDate: "04 / 25",
+    paymentType: "visa",
+    frequency: "Monthly",
+  },
+  {
+    id: 3,
+    name: "Savannah Nguyen",
+    image:
+      "https://images.pexels.com/photos/8864285/pexels-photo-8864285.jpeg?cs=srgb&dl=pexels-fikri-hidayatullah-8864285.jpg&fm=jpg&_gl=1*12hy7cg*_ga*NTMwNjY5MzMzLjE2NjQ5MDE4MTQ.*_ga_8JE65Q40S6*MTY2ODYwNTcyMi41LjEuMTY2ODYwNTc2Ny4wLjAuMA..",
+    ins: "INS- 12345",
+    card: "5495 1872 27975 4789",
+    amount: 821,
+    securityCode: 732,
+    expiryDate: "04 / 25",
+    paymentType: "visa",
+    frequency: "Monthly",
+  },
+  {
+    id: 4,
+    name: "Arlene McCoy",
+    image:
+      "https://images.pexels.com/photos/8864285/pexels-photo-8864285.jpeg?cs=srgb&dl=pexels-fikri-hidayatullah-8864285.jpg&fm=jpg&_gl=1*12hy7cg*_ga*NTMwNjY5MzMzLjE2NjQ5MDE4MTQ.*_ga_8JE65Q40S6*MTY2ODYwNTcyMi41LjEuMTY2ODYwNTc2Ny4wLjAuMA..",
+    ins: "INS- 12345",
+    card: "5495 1872 27975 4789",
+    amount: 550,
+    securityCode: 732,
+    expiryDate: "04 / 25",
+    paymentType: "visa",
+    frequency: "Monthly",
+  },
+  {
+    id: 5,
+    name: "Marvin McKinney",
+    image:
+      "https://images.pexels.com/photos/8864285/pexels-photo-8864285.jpeg?cs=srgb&dl=pexels-fikri-hidayatullah-8864285.jpg&fm=jpg&_gl=1*12hy7cg*_ga*NTMwNjY5MzMzLjE2NjQ5MDE4MTQ.*_ga_8JE65Q40S6*MTY2ODYwNTcyMi41LjEuMTY2ODYwNTc2Ny4wLjAuMA..",
+    ins: "INS- 12345",
+    card: "5495 1872 27975 4789",
+    amount: 430,
+    securityCode: 732,
+    expiryDate: "04 / 25",
+    paymentType: "visa",
+    frequency: "Monthly",
+  },
+  {
+    id: 6,
+    name: "Bessie Cooper",
+    image:
+      "https://images.pexels.com/photos/8864285/pexels-photo-8864285.jpeg?cs=srgb&dl=pexels-fikri-hidayatullah-8864285.jpg&fm=jpg&_gl=1*12hy7cg*_ga*NTMwNjY5MzMzLjE2NjQ5MDE4MTQ.*_ga_8JE65Q40S6*MTY2ODYwNTcyMi41LjEuMTY2ODYwNTc2Ny4wLjAuMA..",
+    ins: "INS- 12345",
+    card: "5495 1872 27975 4789",
+    amount: 200,
+    securityCode: 732,
+    expiryDate: "04 / 25",
+    paymentType: "visa",
+    frequency: "Monthly",
+  },
+  {
+    id: 7,
+    name: "Ronald Richards",
+    image:
+      "https://images.pexels.com/photos/8864285/pexels-photo-8864285.jpeg?cs=srgb&dl=pexels-fikri-hidayatullah-8864285.jpg&fm=jpg&_gl=1*12hy7cg*_ga*NTMwNjY5MzMzLjE2NjQ5MDE4MTQ.*_ga_8JE65Q40S6*MTY2ODYwNTcyMi41LjEuMTY2ODYwNTc2Ny4wLjAuMA..",
+    ins: "INS- 12345",
+    card: "5495 1872 27975 4789",
+    amount: 600,
+    securityCode: 732,
+    expiryDate: "04 / 25",
+    paymentType: "visa",
+    frequency: "Monthly",
+  },
+  {
+    id: 8,
+    name: "Robert Fox",
+    image:
+      "https://images.pexels.com/photos/8864285/pexels-photo-8864285.jpeg?cs=srgb&dl=pexels-fikri-hidayatullah-8864285.jpg&fm=jpg&_gl=1*12hy7cg*_ga*NTMwNjY5MzMzLjE2NjQ5MDE4MTQ.*_ga_8JE65Q40S6*MTY2ODYwNTcyMi41LjEuMTY2ODYwNTc2Ny4wLjAuMA..",
+    ins: "INS- 12345",
+    card: "5495 1872 27975 4789",
+    amount: 200,
+    securityCode: 732,
+    expiryDate: "04 / 25",
+    paymentType: "visa",
+    frequency: "Monthly",
+  },
+];
+
+export { customerInfo };
