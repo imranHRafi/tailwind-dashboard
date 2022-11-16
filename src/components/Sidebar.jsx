@@ -4,6 +4,7 @@ import recurring from "../../public/images/sidebar/recurring.png";
 import listing from "../../public/images/sidebar/listing.png";
 import stats from "../../public/images/sidebar/stats.png";
 import settings from "../../public/images/sidebar/settings.png";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -13,11 +14,21 @@ const Sidebar = () => {
       </div>
 
       <div className='flex flex-col items-center gap-10 '>
-        <img src={home} alt='' className='h-6 w-6' />
-        <img src={recurring} alt='' className='h-6 w-6' />
-        <img src={listing} alt='' className='h-6 w-6' />
-        <img src={stats} alt='' className='h-6 w-6' />
-        <img src={settings} alt='' className='h-6 w-6' />
+        <Link to='/'>
+          <img src={home} alt='' className='h-6 w-6' />
+        </Link>
+        <Link to='/payments'>
+          <img src={recurring} alt='' className='h-6 w-6' />
+        </Link>
+        <Link to=''>
+          <img src={listing} alt='' className='h-6 w-6' />
+        </Link>
+        <Link>
+          <img src={stats} alt='' className='h-6 w-6' />
+        </Link>
+        <Link>
+          <img src={settings} alt='' className='h-6 w-6' />
+        </Link>
       </div>
     </aside>
   );

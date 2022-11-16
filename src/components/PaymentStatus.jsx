@@ -10,7 +10,7 @@ const PaymentStatus = () => {
           Add
         </span>
         <span className='grid h-[60px] w-[208px] place-content-center rounded-sm bg-white text-sm uppercase'>
-          Add
+          Export
         </span>
         <span className='grid h-[60px] w-[208px] place-content-center rounded-sm bg-white text-sm uppercase'>
           Report

@@ -17,31 +17,31 @@ const Table = () => {
         {/* TABLE HEAD */}
         <thead className='divTableHeading'>
           <tr className='flex justify-between bg-white text-left text-xs font-normal text-[#757A80]'>
-            <th className='w-[240px] p-6 font-normal  uppercase'>customer name</th>
-            <th className=' w-[280px]  p-6  font-normal uppercase '>card</th>
-            <th className='w-[160px] p-6  font-normal uppercase '>amount</th>
-            <th className='w-[160px] p-6 font-normal uppercase '>frequency</th>
-            <th className='w-[80px] p-6  uppercase'></th>
+            <th className='w-[240px] p-4 font-normal  uppercase'>customer name</th>
+            <th className=' w-[280px]  p-4  font-normal uppercase '>card</th>
+            <th className='w-[160px] p-4  font-normal uppercase '>amount</th>
+            <th className='w-[160px] p-4 font-normal uppercase '>frequency</th>
+            <th className='w-[80px] p-4  uppercase'></th>
           </tr>
         </thead>
         {/* TABLE BODY */}
         <tbody className='w-full border-b'>
           {customerInfo.map((c) => (
             <tr className='flex items-center justify-between  border-b bg-white' key={c.id}>
-              <td className='flex w-[240px] cursor-pointer items-center gap-4 p-6 uppercase'>
+              <td className='flex w-[240px] cursor-pointer items-center gap-4 p-4 uppercase'>
                 <img className=' h-7 w-7 rounded-full object-cover' src={c.image} alt='' />
                 <div>
                   <h1 className='text-sm font-bold'>{c.name}</h1>
                   <span className='text-[12px] uppercase text-[#5B616E]'>{c.ins}</span>
                 </div>
               </td>
-              <td class='flex w-[280px] items-center gap-4 p-6  uppercase'>
+              <td class='flex w-[280px] items-center gap-4 p-4  uppercase'>
                 <RiVisaLine fontSize={24} />
                 <span className='text-sm tracking-[-1px]'>{trimNumber(c.card)}</span>
               </td>
-              <td className='w-[160px] p-6  text-sm'>${c.amount}</td>
-              <td className='w-[160px] p-6   text-sm'>{c.frequency}</td>
-              <td className=' cursor-pointer p-6'>
+              <td className='w-[160px] p-4  text-sm'>${c.amount}</td>
+              <td className='w-[160px] p-4   text-sm'>{c.frequency}</td>
+              <td className=' cursor-pointer p-4'>
                 <BsChevronRight fontSize={24} />
               </td>
             </tr>

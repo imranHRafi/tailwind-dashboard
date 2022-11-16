@@ -6,7 +6,7 @@ const Navbar = () => {
   const [sticky, setSticky] = useState(false);
 
   const isSticky = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 50) {
       setSticky(true);
     } else {
       setSticky(false);
@@ -18,9 +18,10 @@ const Navbar = () => {
       window.removeEventListener("scroll", isSticky);
     };
   }, []);
+  //className={sticky ? "sticky top-0 bg-white shadow-sm" : ""}
 
   return (
-    <div className={sticky ? "sticky top-0 bg-white" : ""}>
+    <div className={sticky ? "sticky top-0 bg-white shadow-lg " : ""}>
       <nav className=' flex h-20   flex-row items-center '>
         <h1 className='mr-auto ml-10 px-8 text-2xl font-bold text-black'>Recurring Payment </h1>
 

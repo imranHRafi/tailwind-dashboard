@@ -7,14 +7,14 @@ const Pagination = () => {
         <p className='text-gray-500'>Showing 1 - 8 of 28 items</p>
       </div>
       <div className='flex items-center'>
-        <BsChevronDoubleLeft />
+        <BsChevronDoubleLeft className='cursor-pointer' />
         <div className='mx-12'>
           <p>
             <span className='mr-4'>1</span> of 40 pages
           </p>
         </div>
 
-        <BsChevronDoubleRight />
+        <BsChevronDoubleRight className='cursor-pointer' />
       </div>
     </div>
   );
