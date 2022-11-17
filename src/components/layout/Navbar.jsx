@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
+import Tooltip from "../Tooltip";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -28,9 +29,13 @@ const Navbar = () => {
         <div>
           <ul className=' flex items-center gap-6'>
             <li>
+              {/* <Tooltip tooltip='Help center'>
+              </Tooltip> */}
               <AiOutlineQuestionCircle fontSize={28} className='cursor-pointer' />
             </li>
             <li>
+              {/* <Tooltip tooltip='profile'>
+              </Tooltip> */}
               <CgProfile fontSize={28} className='cursor-pointer' />
             </li>
           </ul>

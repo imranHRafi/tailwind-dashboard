@@ -1,23 +1,17 @@
 import RecurringStats from "./Recurring Stats";
-import frame from "../../public/images/frame.png";
+import frame from "../../../public/images/frame.png";
 
 const PaymentStatus = () => {
+  const classes =
+    "grid h-[60px] w-[208px] place-content-center rounded-sm bg-white text-sm uppercase";
   return (
     <div className='w-[424px]  '>
       {/* FIRST SECTION */}
       <div className='grid grid-cols-2 gap-2'>
-        <span className='grid h-[60px] w-[208px] place-content-center rounded-sm bg-white text-sm uppercase'>
-          Add
-        </span>
-        <span className='grid h-[60px] w-[208px] place-content-center rounded-sm bg-white text-sm uppercase'>
-          Export
-        </span>
-        <span className='grid h-[60px] w-[208px] place-content-center rounded-sm bg-white text-sm uppercase'>
-          Report
-        </span>
-        <span className='grid h-[60px] w-[208px] place-content-center rounded-sm bg-white text-sm uppercase'>
-          Suspend
-        </span>
+        <span className={classes}>Add</span>
+        <span className={classes}>Export</span>
+        <span className={classes}>Report</span>
+        <span className={classes}>Suspend</span>
       </div>
 
       {/* SECOND SECTION */}

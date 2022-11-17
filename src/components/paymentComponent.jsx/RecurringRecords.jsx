@@ -1,7 +1,7 @@
 import { MdOutlineSort } from "react-icons/md";
 import { CiFilter } from "react-icons/ci";
 import Table from "./Table";
-import Pagination from "./Pagination";
+import Pagination from "../Pagination";
 
 const RecurringRecords = () => {
   return (

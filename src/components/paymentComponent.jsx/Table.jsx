@@ -1,6 +1,6 @@
+import { customerInfo } from "../../data/customerInfo";
 import { RiVisaLine } from "react-icons/ri";
 import { FaCcMastercard } from "react-icons/fa";
-import { customerInfo } from "../data/customerInfo";
 import { BsChevronRight } from "react-icons/bs";
 
 const Table = () => {
@@ -10,6 +10,13 @@ const Table = () => {
     const concatNumber = first + " ****" + " **** " + last;
     return concatNumber;
   }
+
+  const sortByAmount = (arr, item) => {
+    const sorted = arr.sort((a, b) => (a.name > b.name ? 1 : b.name < a.name ? -1 : 0));
+    return sorted;
+  };
+
+  console.log(sortByAmount(customerInfo));
 
   return (
     <div className='text-[#17181A]'>
@@ -35,7 +42,7 @@ const Table = () => {
                   <span className='text-[12px] uppercase text-[#5B616E]'>{c.ins}</span>
                 </div>
               </td>
-              <td class='flex w-[280px] items-center gap-4 p-4  uppercase'>
+              <td className='flex w-[280px] items-center gap-4 p-4  uppercase'>
                 <RiVisaLine fontSize={24} />
                 <span className='text-sm tracking-[-1px]'>{trimNumber(c.card)}</span>
               </td>

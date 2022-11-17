@@ -1,4 +1,5 @@
 import Chart from "./Chart";
+
 const RecurringStats = () => {
   const monthlyProcess = [
     { name: "Jan", Total: 1200 },

@@ -1,14 +1,10 @@
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
+import Sidebar from "../components/layout/Sidebar";
+import Navbar from "../components/layout/Navbar";
 
 const Home = () => {
   return (
-    <div className=' flex bg-zinc-50 lg:container'>
-      <Sidebar />
-      <div className='ml-[88px] flex flex-1 flex-col'>
-        <Navbar />
-        <div className='ml-2 flex h-full'>Home</div>
-      </div>
+    <div className='flex h-screen flex-col items-center justify-center gap-9 bg-white'>
+      <h1 className='text-5xl text-brand'>Home</h1>
     </div>
   );
 };
